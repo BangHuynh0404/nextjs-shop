@@ -1,0 +1,29 @@
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(237, 237, 237);
+  background: linear-gradient(
+    146deg,
+    rgba(237, 237, 237, 1) 30%,
+    rgba(0, 7, 255, 1) 60%,
+    rgba(255, 0, 0, 1) 90%
+  ); */
+}
+.main {
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  scale: 0.5;
+  
+}
+
+
+.products-container{
+  display: flex;
+}

@@ -19,6 +19,7 @@ const ProductCard = ({ product, key }) => {
         key={key}
         whileHover={{ scale: 1.1 }}
       >
+        {/* IMAGE */}
         <div className='card-img-container'>
           <Image
             className='card-img'
@@ -30,11 +31,13 @@ const ProductCard = ({ product, key }) => {
           />
         </div>
 
+        {/* CONTENT */}
         <div className='card-content'>
           <span className='product-title'>{product?.title}</span>
-          <Rate disabled defaultValue={product.rating.rate} />
+          <Rate disabled defaultValue={product?.rating.rate} />
           <span className='product-price'>$ {product?.price} </span>
         </div>
+
         <Button
           className='btn-add-to-cart'
           type='text'

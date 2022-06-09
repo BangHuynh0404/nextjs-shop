@@ -5,7 +5,7 @@ import { ShoppingTwoTone, HeartTwoTone } from '@ant-design/icons';
 import WrapperProductCardStyled from './ProductCardStyled';
 import { useRouter } from 'next/router';
 import { Parallax } from 'rc-scroll-anim';
-import Link from 'next/link';
+
 const ProductCard = ({ product, key }) => {
   const router = useRouter();
   const content = <span className='product-title'>Demo text!</span>;
@@ -23,7 +23,7 @@ const ProductCard = ({ product, key }) => {
         <div className='card-img-container'>
           <Image
             className='card-img'
-            src={product?.image}
+            src={product.image}
             preview={false}
             alt=''
             width={200}
@@ -33,9 +33,9 @@ const ProductCard = ({ product, key }) => {
 
         {/* CONTENT */}
         <div className='card-content'>
-          <span className='product-title'>{product?.title}</span>
-          <Rate disabled defaultValue={product?.rating.rate} />
-          <span className='product-price'>$ {product?.price} </span>
+          <span className='product-title'>{product.title}</span>
+          <Rate disabled defaultValue={product.rating.rate} />
+          <span className='product-price'>$ {product.price} </span>
         </div>
 
         <Button

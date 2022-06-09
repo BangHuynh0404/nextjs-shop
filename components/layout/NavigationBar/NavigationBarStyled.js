@@ -7,8 +7,7 @@ const WrapperNavigationBarStyled = styled.nav`
   top: 0;
   padding: 5px;
   height: 60px;
-  width: 100%;
-  min-width: 414px;
+
   justify-content: space-between;
   /* glass effect */
   background: rgba(255, 255, 255, 0.22);
@@ -82,8 +81,8 @@ const WrapperNavigationBarStyled = styled.nav`
       padding-right: 10px;
     }
     .navbar-mobile {
-      width: 100%;
       display: none;
+      width: 100%;
       justify-content: space-around;
       align-items: center;
       @media (max-width: 768px) {

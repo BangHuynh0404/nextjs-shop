@@ -32,13 +32,13 @@ export default function Home() {
     };
     fetchData();
   }, []);
-  // if (!products) {
-  //   return (
-  //     <div className='main-container'>
-  //       <Lottie animationData={loading} play />
-  //     </div>
-  //   );
-  // }
+  if (!products) {
+    return (
+      <div className='main-container'>
+        <Lottie animationData={loading} play />
+      </div>
+    );
+  }
   return (
     <div className={styles.mainContainer}>
       <Head>
